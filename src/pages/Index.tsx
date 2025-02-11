@@ -5,18 +5,33 @@ import { ChevronRight, Shield, Users, FileCheck } from "lucide-react";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex h-16 items-center justify-between">
+            <div className="flex-shrink-0">
+              <img
+                className="h-8 w-auto"
+                src="/truora-logo.svg"
+                alt="Truora"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-white">
+      <div className="relative overflow-hidden bg-white pt-16">
         <div className="mx-auto max-w-7xl">
           <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
             <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
               <div className="sm:text-center lg:text-left">
                 <h1 className="text-4xl font-bold tracking-tight text-[#1A1F2C] sm:text-5xl md:text-6xl">
-                  <span className="block">Transform Your</span>
-                  <span className="block text-[#9b87f5]">Business Operations</span>
+                  <span className="block">We connect</span>
+                  <span className="block text-[#9b87f5]">businesses and people</span>
                 </h1>
                 <p className="mt-3 text-base text-gray-600 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                  Elevate your business with Truora's comprehensive solutions: Advanced customer engagement platform and secure electronic signatures for the modern enterprise.
+                  Simplify access to your digital services and securely enhance your relationship with customers
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
