@@ -12,7 +12,7 @@ const Index = () => {
             <div className="flex-shrink-0">
               <img
                 className="h-8 w-auto"
-                src="/truora-logo.svg"
+                src="/lovable-uploads/f0311879-f89e-440d-8ff5-9a6b71d52fcb.png"
                 alt="Truora"
               />
             </div>
