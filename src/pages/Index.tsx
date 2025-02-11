@@ -11,7 +11,7 @@ const Index = () => {
           <div className="flex h-16 items-center justify-between">
             <div className="flex-shrink-0">
               <img
-                className="h-8 w-auto"
+                className="h-12 w-auto"
                 src="/lovable-uploads/f0311879-f89e-440d-8ff5-9a6b71d52fcb.png"
                 alt="Truora"
               />
