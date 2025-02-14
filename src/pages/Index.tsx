@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { ChevronRight, Shield, Users, FileCheck } from "lucide-react";
+import { Shield, Users, FileCheck } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -8,29 +9,27 @@ const Index = () => {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
+          <div className="flex h-20 items-center justify-between">
             <div className="flex-shrink-0">
               <img
-                className="h-12 w-auto"
+                className="h-16 w-auto"
                 src="/lovable-uploads/f0311879-f89e-440d-8ff5-9a6b71d52fcb.png"
                 alt="Truora"
               />
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <Button variant="ghost" className="text-gray-600 hover:text-[#9b87f5]">
-                Products
-              </Button>
-              <Button variant="ghost" className="text-gray-600 hover:text-[#9b87f5]">
-                Use Cases
-              </Button>
-              <Button variant="ghost" className="text-gray-600 hover:text-[#9b87f5]">
-                Success Stories
-              </Button>
-              <Button variant="ghost" className="text-gray-600 hover:text-[#9b87f5]">
-                Resources
-              </Button>
-              <Button className="bg-[#9b87f5] hover:bg-[#8b77e5] text-white">
-                Talk to Sales
+              <Link to="/products">
+                <Button variant="ghost" className="text-gray-600 hover:text-[#4800FF]">
+                  Products
+                </Button>
+              </Link>
+              <Link to="/use-cases">
+                <Button variant="ghost" className="text-gray-600 hover:text-[#4800FF]">
+                  Use Cases
+                </Button>
+              </Link>
+              <Button variant="ghost" className="text-gray-600 hover:text-[#4800FF]">
+                About Us
               </Button>
             </nav>
           </div>
@@ -45,23 +44,17 @@ const Index = () => {
               <div className="text-center">
                 <h1 className="text-4xl font-bold tracking-tight text-[#1A1F2C] sm:text-5xl md:text-6xl">
                   <span className="block">We connect</span>
-                  <span className="block text-[#9b87f5]">businesses and people</span>
+                  <span className="block text-[#4800FF]">businesses and people</span>
                 </h1>
                 <p className="mt-3 text-base text-gray-600 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl">
                   Simplify access to your digital services and securely enhance your relationship with customers
                 </p>
-                <div className="mt-5 sm:mt-8 flex justify-center">
-                  <div className="rounded-md shadow">
-                    <Button className="flex w-full items-center justify-center gap-2 bg-[#9b87f5] hover:bg-[#8b77e5]">
-                      Learn about our products
-                      <ChevronRight className="h-4 w-4" />
-                    </Button>
-                  </div>
-                  <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <Button variant="outline" className="w-full border-[#9b87f5] text-[#9b87f5] hover:bg-[#9b87f5] hover:text-white">
-                      Talk to Sales
-                    </Button>
-                  </div>
+                <div className="mt-8">
+                  <img
+                    src="/lovable-uploads/df7148e5-8ed3-4bce-815a-417476ed3e7c.png"
+                    alt="Truora Solutions"
+                    className="mx-auto max-w-full h-auto"
+                  />
                 </div>
               </div>
             </main>
@@ -83,10 +76,10 @@ const Index = () => {
             <div className="mt-10">
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 {/* Solution 1 - Customer Engagement */}
-                <div className="pt-6">
+                <Link to="/products" className="pt-6">
                   <div className="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition-transform hover:scale-105">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-[#9b87f5] p-3 shadow-lg">
+                      <div className="inline-flex items-center justify-center rounded-md bg-[#4800FF] p-3 shadow-lg">
                         <Users className="h-6 w-6 text-white" />
                       </div>
                       <h3 className="mt-8 text-lg font-medium tracking-tight text-[#1A1F2C]">
@@ -97,13 +90,13 @@ const Index = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </Link>
 
                 {/* Solution 2 - Document Management */}
-                <div className="pt-6">
+                <Link to="/products" className="pt-6">
                   <div className="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition-transform hover:scale-105">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-[#9b87f5] p-3 shadow-lg">
+                      <div className="inline-flex items-center justify-center rounded-md bg-[#4800FF] p-3 shadow-lg">
                         <FileCheck className="h-6 w-6 text-white" />
                       </div>
                       <h3 className="mt-8 text-lg font-medium tracking-tight text-[#1A1F2C]">
@@ -114,13 +107,13 @@ const Index = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </Link>
 
                 {/* Solution 3 - Security */}
-                <div className="pt-6">
+                <Link to="/products" className="pt-6">
                   <div className="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition-transform hover:scale-105">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-[#9b87f5] p-3 shadow-lg">
+                      <div className="inline-flex items-center justify-center rounded-md bg-[#4800FF] p-3 shadow-lg">
                         <Shield className="h-6 w-6 text-white" />
                       </div>
                       <h3 className="mt-8 text-lg font-medium tracking-tight text-[#1A1F2C]">
@@ -131,7 +124,7 @@ const Index = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
