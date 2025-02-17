@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { Shield, Users, FileCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -28,9 +27,11 @@ const Index = () => {
                   Use Cases
                 </Button>
               </Link>
-              <Button variant="ghost" className="text-gray-600 hover:text-[#4800FF]">
-                About Us
-              </Button>
+              <Link to="/about">
+                <Button variant="ghost" className="text-gray-600 hover:text-[#4800FF]">
+                  About Us
+                </Button>
+              </Link>
             </nav>
           </div>
         </div>
@@ -74,13 +75,17 @@ const Index = () => {
             </div>
 
             <div className="mt-10">
-              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
                 {/* Solution 1 - Customer Engagement */}
-                <Link to="/products" className="pt-6">
-                  <div className="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition-transform hover:scale-105">
+                <Link to="/products/customer-engagement" className="pt-6">
+                  <div className="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition-transform hover:scale-105 border-2 border-[#25D366]">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-[#4800FF] p-3 shadow-lg">
-                        <Users className="h-6 w-6 text-white" />
+                      <div className="inline-flex items-center justify-center rounded-md bg-[#25D366] p-3 shadow-lg">
+                        <img
+                          src="/lovable-uploads/47d733f3-e46c-480c-aa5c-ed030d202920.png"
+                          alt="Customer Engagement"
+                          className="h-6 w-6"
+                        />
                       </div>
                       <h3 className="mt-8 text-lg font-medium tracking-tight text-[#1A1F2C]">
                         Customer Engagement
@@ -92,35 +97,22 @@ const Index = () => {
                   </div>
                 </Link>
 
-                {/* Solution 2 - Document Management */}
-                <Link to="/products" className="pt-6">
-                  <div className="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition-transform hover:scale-105">
+                {/* Solution 2 - Electronic Signature */}
+                <Link to="/products/electronic-signature" className="pt-6">
+                  <div className="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition-transform hover:scale-105 border-2 border-[#5584EB]">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-[#4800FF] p-3 shadow-lg">
-                        <FileCheck className="h-6 w-6 text-white" />
+                      <div className="inline-flex items-center justify-center rounded-md bg-[#5584EB] p-3 shadow-lg">
+                        <img
+                          src="/lovable-uploads/40acce34-32c5-43d9-aa97-57217b1f3cea.png"
+                          alt="Electronic Signature"
+                          className="h-6 w-6"
+                        />
                       </div>
                       <h3 className="mt-8 text-lg font-medium tracking-tight text-[#1A1F2C]">
-                        ZapSign Solutions
+                        Electronic Signature
                       </h3>
                       <p className="mt-5 text-base text-gray-600">
                         Streamline your document workflows with our secure electronic signature platform. Sign, send, and manage documents effortlessly.
-                      </p>
-                    </div>
-                  </div>
-                </Link>
-
-                {/* Solution 3 - Security */}
-                <Link to="/products" className="pt-6">
-                  <div className="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition-transform hover:scale-105">
-                    <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-[#4800FF] p-3 shadow-lg">
-                        <Shield className="h-6 w-6 text-white" />
-                      </div>
-                      <h3 className="mt-8 text-lg font-medium tracking-tight text-[#1A1F2C]">
-                        Enterprise Security
-                      </h3>
-                      <p className="mt-5 text-base text-gray-600">
-                        Bank-level security and full compliance with US regulations. Your data is protected with state-of-the-art encryption.
                       </p>
                     </div>
                   </div>
@@ -129,6 +121,15 @@ const Index = () => {
             </div>
           </div>
         </div>
+
+        {/* Footer */}
+        <footer className="bg-white py-12">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center text-gray-600">
+              <p>Battery Street, San Francisco, California 94111, US</p>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
