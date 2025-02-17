@@ -80,7 +80,7 @@ const Index = () => {
                 <Link to="/products/customer-engagement" className="pt-6">
                   <div className="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition-transform hover:scale-105 border-2 border-[#25D366]">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-[#25D366] p-3 shadow-lg">
+                      <div className="inline-flex items-center justify-center rounded-md bg-white p-3 shadow-lg">
                         <img
                           src="/lovable-uploads/47d733f3-e46c-480c-aa5c-ed030d202920.png"
                           alt="Customer Engagement"
@@ -101,7 +101,7 @@ const Index = () => {
                 <Link to="/products/electronic-signature" className="pt-6">
                   <div className="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition-transform hover:scale-105 border-2 border-[#5584EB]">
                     <div className="-mt-6">
-                      <div className="inline-flex items-center justify-center rounded-md bg-[#5584EB] p-3 shadow-lg">
+                      <div className="inline-flex items-center justify-center rounded-md bg-white p-3 shadow-lg">
                         <img
                           src="/lovable-uploads/40acce34-32c5-43d9-aa97-57217b1f3cea.png"
                           alt="Electronic Signature"
@@ -117,6 +117,56 @@ const Index = () => {
                     </div>
                   </div>
                 </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Direct Connections Section */}
+        <div className="bg-[#000314] py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold text-white mb-4">
+                Connect WhatsApp with your company's tools
+              </h2>
+              <p className="text-white/80 text-lg mb-12">
+                Take your customer interactions to the next level. Integrate your company's tools with WhatsApp.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div className="bg-white rounded-lg p-6 flex flex-col items-center">
+                  <img 
+                    src="/lovable-uploads/e48d61d5-fd1c-4396-8a97-cb43390e823f.png" 
+                    alt="HubSpot"
+                    className="h-16 mb-4"
+                  />
+                  <p className="text-gray-600 text-sm">Automatizaciones de Marketing</p>
+                </div>
+                <div className="bg-white rounded-lg p-6 flex flex-col items-center">
+                  <img 
+                    src="/lovable-uploads/d6e4c510-96bb-4021-aa41-a48471f7a5bb.png" 
+                    alt="Zendesk"
+                    className="h-16 mb-4"
+                  />
+                  <p className="text-gray-600 text-sm">Automatizaciones de Marketing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Who Trusts Us Section */}
+        <div className="bg-white py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1A1F2C] mb-12">
+                Who Trusts Us
+              </h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+                {/* Placeholder for logos */}
+                <div className="h-16 w-32 bg-gray-100 rounded-lg"></div>
+                <div className="h-16 w-32 bg-gray-100 rounded-lg"></div>
+                <div className="h-16 w-32 bg-gray-100 rounded-lg"></div>
+                <div className="h-16 w-32 bg-gray-100 rounded-lg"></div>
               </div>
             </div>
           </div>
