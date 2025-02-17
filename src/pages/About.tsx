@@ -10,23 +10,44 @@ const About = () => {
           </p>
         </div>
 
-        <div className="prose prose-lg mx-auto">
-          <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
-          <p className="mb-8">
-            We believe in creating seamless connections between businesses and their customers. Our platform provides innovative solutions that help companies build trust and enhance their digital services.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+          <div className="bg-white rounded-lg p-8 shadow-lg">
+            <h2 className="text-2xl font-semibold mb-6 text-[#4800FF]">Our Mission</h2>
+            <p className="text-gray-600 leading-relaxed">
+              We believe in creating seamless connections between businesses and their customers. Our platform provides innovative solutions that help companies build trust and enhance their digital services.
+            </p>
+          </div>
 
-          <h2 className="text-2xl font-semibold mb-4">Our Values</h2>
-          <ul className="space-y-4 mb-8">
-            <li>Innovation in every solution</li>
-            <li>Customer success as our priority</li>
-            <li>Security and trust in all operations</li>
-            <li>Continuous improvement and growth</li>
-          </ul>
+          <div className="bg-white rounded-lg p-8 shadow-lg">
+            <h2 className="text-2xl font-semibold mb-6 text-[#4800FF]">Our Vision</h2>
+            <p className="text-gray-600 leading-relaxed">
+              To be the leading platform for business-customer relationships, enabling seamless, secure, and efficient interactions across all channels.
+            </p>
+          </div>
+        </div>
 
-          <h2 className="text-2xl font-semibold mb-4">Global Presence</h2>
-          <p className="mb-8">
-            Headquartered in San Francisco with a growing presence across the Americas, we serve businesses of all sizes with our cutting-edge solutions.
+        <div className="bg-white rounded-lg p-8 shadow-lg mb-16">
+          <h2 className="text-2xl font-semibold mb-6 text-[#4800FF]">Our Values</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-lg font-medium mb-3">Innovation</h3>
+              <p className="text-gray-600">Constantly pushing boundaries to create cutting-edge solutions</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-3">Trust</h3>
+              <p className="text-gray-600">Building secure and reliable platforms for our clients</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-3">Customer Focus</h3>
+              <p className="text-gray-600">Putting our customers' needs at the heart of everything we do</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg p-8 shadow-lg">
+          <h2 className="text-2xl font-semibold mb-6 text-[#4800FF]">Global Presence</h2>
+          <p className="text-gray-600 leading-relaxed">
+            Headquartered in San Francisco with a growing presence across the Americas, we serve businesses of all sizes with our cutting-edge solutions. Our global team works tirelessly to provide innovative solutions that help companies succeed in the digital age.
           </p>
         </div>
       </div>

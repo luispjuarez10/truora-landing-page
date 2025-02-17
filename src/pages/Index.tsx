@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -135,19 +134,19 @@ const Index = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div className="bg-white rounded-lg p-6 flex flex-col items-center">
                   <img 
-                    src="/lovable-uploads/e48d61d5-fd1c-4396-8a97-cb43390e823f.png" 
+                    src="/lovable-uploads/cfcaac95-7a59-45c0-8293-f6f973a463a8.png" 
                     alt="HubSpot"
                     className="h-16 mb-4"
                   />
-                  <p className="text-gray-600 text-sm">Automatizaciones de Marketing</p>
+                  <p className="text-gray-600 text-sm">Marketing Automation</p>
                 </div>
                 <div className="bg-white rounded-lg p-6 flex flex-col items-center">
                   <img 
-                    src="/lovable-uploads/d6e4c510-96bb-4021-aa41-a48471f7a5bb.png" 
+                    src="/lovable-uploads/f875cb9b-f6de-4629-b922-79dac54b944f.png" 
                     alt="Zendesk"
                     className="h-16 mb-4"
                   />
-                  <p className="text-gray-600 text-sm">Automatizaciones de Marketing</p>
+                  <p className="text-gray-600 text-sm">Customer Service Integration</p>
                 </div>
               </div>
             </div>

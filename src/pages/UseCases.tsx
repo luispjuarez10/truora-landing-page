@@ -80,34 +80,44 @@ const UseCases = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-24">
+    <div className="min-h-screen pt-24 bg-gray-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-12">Use Cases</h1>
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold mb-4">Use Cases</h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Discover how our solutions can transform your business operations
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {cases.map((useCase, index) => (
-            <div key={index} className="rounded-lg bg-white p-8 shadow-lg">
-              <h3 className="text-xl font-semibold mb-4 text-[#4800FF]">{useCase.title}</h3>
-              <p className="text-gray-600 mb-6">{useCase.description}</p>
+            <div key={index} className="rounded-lg bg-white p-8 shadow-lg transform transition-all duration-300 hover:shadow-xl">
+              <h3 className="text-2xl font-semibold mb-4 text-[#4800FF]">{useCase.title}</h3>
+              <p className="text-gray-600 mb-6 text-lg">{useCase.description}</p>
               
-              <h4 className="font-medium mb-3">Key Benefits:</h4>
-              <ul className="space-y-2 mb-6">
-                {useCase.benefits.map((benefit, idx) => (
-                  <li key={idx} className="text-gray-600 flex items-start">
-                    <span className="text-[#4800FF] mr-2">•</span>
-                    <span>{benefit}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="bg-gray-50 rounded-lg p-6 mb-6">
+                <h4 className="font-medium mb-4 text-lg">Key Benefits:</h4>
+                <ul className="space-y-3">
+                  {useCase.benefits.map((benefit, idx) => (
+                    <li key={idx} className="text-gray-600 flex items-start">
+                      <span className="text-[#4800FF] mr-2">•</span>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-              <h4 className="font-medium mb-3">Features:</h4>
-              <ul className="space-y-2">
-                {useCase.features.map((feature, idx) => (
-                  <li key={idx} className="text-gray-600 flex items-start">
-                    <span className="text-[#4800FF] mr-2">•</span>
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h4 className="font-medium mb-4 text-lg">Features:</h4>
+                <ul className="space-y-3">
+                  {useCase.features.map((feature, idx) => (
+                    <li key={idx} className="text-gray-600 flex items-start">
+                      <span className="text-[#4800FF] mr-2">•</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
