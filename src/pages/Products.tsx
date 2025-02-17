@@ -1,70 +1,97 @@
 
 import { Shield, Users, FileCheck } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   return (
     <div className="min-h-screen pt-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-center mb-8">Our Solutions</h1>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {/* Customer Engagement */}
-          <div className="rounded-lg bg-white p-8 shadow-lg">
-            <div className="mb-4">
-              <div className="inline-flex items-center justify-center rounded-md bg-[#4800FF] p-3 shadow-lg">
-                <Users className="h-6 w-6 text-white" />
+          <div className="rounded-lg bg-white p-8 shadow-lg transform transition-all duration-300 hover:shadow-xl">
+            <div className="mb-6">
+              <div className="inline-flex items-center justify-center rounded-md bg-white p-3 shadow-lg">
+                <img
+                  src="/lovable-uploads/47d733f3-e46c-480c-aa5c-ed030d202920.png"
+                  alt="Customer Engagement"
+                  className="h-12 w-12"
+                />
               </div>
             </div>
-            <h3 className="text-xl font-semibold mb-4">Customer Engagement</h3>
+            <h3 className="text-2xl font-semibold mb-4">WhatsApp Customer Engagement</h3>
             <p className="text-gray-600 mb-6">
-              Build stronger relationships with your customers through our advanced engagement platform. 
-              Featuring real-time interactions, powerful analytics, and seamless integration capabilities.
+              Transform your customer communication with our WhatsApp Business integration. 
+              Build stronger relationships through real-time messaging and automated responses.
             </p>
-            <ul className="space-y-3 text-gray-600">
-              <li>• Real-time customer interaction</li>
-              <li>• Advanced analytics dashboard</li>
-              <li>• Seamless integration with existing systems</li>
-              <li>• Custom workflow automation</li>
+            <h4 className="font-medium mb-4">Key Features:</h4>
+            <ul className="space-y-3 mb-6">
+              <li className="flex items-start">
+                <span className="text-[#25D366] mr-2">•</span>
+                <span>Real-time customer messaging</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#25D366] mr-2">•</span>
+                <span>Automated response system</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#25D366] mr-2">•</span>
+                <span>Multi-agent support</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#25D366] mr-2">•</span>
+                <span>Business tool integrations</span>
+              </li>
             </ul>
+            <Link 
+              to="/products/customer-engagement" 
+              className="inline-block bg-[#25D366] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors"
+            >
+              Learn More
+            </Link>
           </div>
 
-          {/* ZapSign Solutions */}
-          <div className="rounded-lg bg-white p-8 shadow-lg">
-            <div className="mb-4">
-              <div className="inline-flex items-center justify-center rounded-md bg-[#4800FF] p-3 shadow-lg">
-                <FileCheck className="h-6 w-6 text-white" />
+          {/* Electronic Signature */}
+          <div className="rounded-lg bg-white p-8 shadow-lg transform transition-all duration-300 hover:shadow-xl">
+            <div className="mb-6">
+              <div className="inline-flex items-center justify-center rounded-md bg-white p-3 shadow-lg">
+                <img
+                  src="/lovable-uploads/40acce34-32c5-43d9-aa97-57217b1f3cea.png"
+                  alt="Electronic Signature"
+                  className="h-12 w-12"
+                />
               </div>
             </div>
-            <h3 className="text-xl font-semibold mb-4">ZapSign Solutions</h3>
+            <h3 className="text-2xl font-semibold mb-4">Electronic Signature</h3>
             <p className="text-gray-600 mb-6">
-              A comprehensive electronic signature platform designed for businesses of all sizes.
-              Secure, compliant, and easy to use.
+              Streamline your document workflows with our secure electronic signature platform. 
+              Sign, send, and manage documents effortlessly.
             </p>
-            <ul className="space-y-3 text-gray-600">
-              <li>• Digital signature compliance</li>
-              <li>• Document workflow automation</li>
-              <li>• Template management</li>
-              <li>• Multi-party signing</li>
+            <h4 className="font-medium mb-4">Key Features:</h4>
+            <ul className="space-y-3 mb-6">
+              <li className="flex items-start">
+                <span className="text-[#5584EB] mr-2">•</span>
+                <span>Legally binding e-signatures</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#5584EB] mr-2">•</span>
+                <span>Document workflow automation</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#5584EB] mr-2">•</span>
+                <span>Template management</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-[#5584EB] mr-2">•</span>
+                <span>Advanced security features</span>
+              </li>
             </ul>
-          </div>
-
-          {/* Enterprise Security */}
-          <div className="rounded-lg bg-white p-8 shadow-lg">
-            <div className="mb-4">
-              <div className="inline-flex items-center justify-center rounded-md bg-[#4800FF] p-3 shadow-lg">
-                <Shield className="h-6 w-6 text-white" />
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold mb-4">Enterprise Security</h3>
-            <p className="text-gray-600 mb-6">
-              Bank-level security infrastructure to protect your business and customer data.
-              Full compliance with US regulations and industry standards.
-            </p>
-            <ul className="space-y-3 text-gray-600">
-              <li>• End-to-end encryption</li>
-              <li>• Regulatory compliance</li>
-              <li>• Regular security audits</li>
-              <li>• Advanced threat protection</li>
-            </ul>
+            <Link 
+              to="/products/electronic-signature" 
+              className="inline-block bg-[#5584EB] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors"
+            >
+              Learn More
+            </Link>
           </div>
         </div>
       </div>
