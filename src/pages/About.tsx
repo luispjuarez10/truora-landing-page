@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 
 const About = () => {
@@ -5,7 +6,7 @@ const About = () => {
     {
       name: "Daniel Bilbao",
       role: "CEO & Co-founder",
-      image: "/lovable-uploads/c1a740ff-c07f-4458-92f9-783ccee58a4b.png"
+      image: "/lovable-uploads/3154e12a-6f9b-47b9-917a-9b33a943a69e.png"
     },
     {
       name: "Maite Muniz",
@@ -52,26 +53,26 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Header />
       <div className="pt-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold mb-4">About Us</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#4800FF] to-blue-600">About Us</h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Truora is a technology company that helps businesses connect with their customers through innovative solutions
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-            <div className="bg-white rounded-lg p-8 shadow-lg">
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-[#4800FF]">
               <h2 className="text-2xl font-semibold mb-6 text-[#4800FF]">Our Mission</h2>
               <p className="text-gray-600 leading-relaxed">
                 We believe in creating seamless connections between businesses and their customers. Our platform provides innovative solutions that help companies build trust and enhance their digital services.
               </p>
             </div>
 
-            <div className="bg-white rounded-lg p-8 shadow-lg">
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-[#4800FF]">
               <h2 className="text-2xl font-semibold mb-6 text-[#4800FF]">Our Vision</h2>
               <p className="text-gray-600 leading-relaxed">
                 To be the leading platform for business-customer relationships, enabling seamless, secure, and efficient interactions across all channels.
@@ -80,11 +81,11 @@ const About = () => {
           </div>
 
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
+            <h2 className="text-4xl font-bold text-center mb-12">Our Values</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {values.map((value, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-semibold mb-3 text-[#4800FF]">{value.title}</h3>
+                <div key={index} className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-t-4 border-[#4800FF]">
+                  <h3 className="text-xl font-semibold mb-4 text-[#4800FF]">{value.title}</h3>
                   <p className="text-gray-600">{value.description}</p>
                 </div>
               ))}
@@ -92,15 +93,15 @@ const About = () => {
           </div>
 
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Leadership Team</h2>
+            <h2 className="text-4xl font-bold text-center mb-12">Leadership Team</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mx-auto">
               {founders.map((founder, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-lg text-center">
+                <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <div className="relative mb-4">
                     <img 
                       src={founder.image} 
                       alt={founder.name}
-                      className="w-32 h-32 rounded-full mx-auto object-cover"
+                      className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-[#4800FF]/10"
                     />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{founder.name}</h3>
@@ -110,7 +111,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg p-8 shadow-lg mb-16">
+          <div className="bg-white rounded-xl p-8 shadow-lg mb-16 border-t-4 border-[#4800FF]">
             <h2 className="text-2xl font-semibold mb-6 text-[#4800FF]">Global Presence</h2>
             <p className="text-gray-600 leading-relaxed">
               Headquartered in San Francisco with a growing presence across the Americas, we serve businesses of all sizes with our cutting-edge solutions. Our global team works tirelessly to provide innovative solutions that help companies succeed in the digital age.
