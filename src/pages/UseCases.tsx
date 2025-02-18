@@ -10,6 +10,7 @@ const UseCases = () => {
       benefit: "Identity validation and customer profiling",
       description: "Accelerate your customer onboarding process with automated workflows and secure document validation.",
       metrics: "50% reduction in customer acquisition costs",
+      image: "/lovable-uploads/dc03b625-f1ed-4b6d-9ec5-77b0dcce209a.png",
       features: [
         "Digital onboarding automation",
         "Multi-channel customer verification",
@@ -19,27 +20,13 @@ const UseCases = () => {
       ]
     },
     {
-      title: "Automated Sales",
-      problem: "Manual and time-consuming sales processes",
-      solution: "AI-powered sales automation",
-      benefit: "Increased conversion rates and efficiency",
-      description: "Optimize your sales process with intelligent automation and real-time customer verification.",
-      metrics: "30% increase in sales efficiency",
-      features: [
-        "Automated lead qualification",
-        "Intelligent customer segmentation",
-        "Sales process automation",
-        "Performance analytics",
-        "Integration with sales tools"
-      ]
-    },
-    {
       title: "Customer Success",
       problem: "Disconnected customer support channels",
       solution: "Unified communication platform",
       benefit: "Enhanced customer satisfaction",
       description: "Create seamless customer experiences with integrated communication channels.",
       metrics: "40% improvement in customer satisfaction",
+      image: "/lovable-uploads/c304a7ff-9941-4df5-be44-d9989f7728d9.png",
       features: [
         "Automated customer support",
         "Document workflow automation",
@@ -55,12 +42,29 @@ const UseCases = () => {
       benefit: "Improved campaign performance",
       description: "Create targeted campaigns and improve conversion rates with automated customer verification.",
       metrics: "25% increase in marketing ROI",
+      image: "/lovable-uploads/12f86b13-b3f3-43f3-ad72-083605dc6dda.png",
       features: [
         "Campaign automation tools",
         "Customer journey mapping",
         "Marketing analytics",
         "Multi-channel integration",
         "Performance tracking"
+      ]
+    },
+    {
+      title: "Automated Sales",
+      problem: "Manual and time-consuming sales processes",
+      solution: "AI-powered sales automation",
+      benefit: "Increased conversion rates and efficiency",
+      description: "Optimize your sales process with intelligent automation and real-time customer verification.",
+      metrics: "30% increase in sales efficiency",
+      image: "/lovable-uploads/2d12de58-038b-45ce-9688-62ae7e5a4726.png",
+      features: [
+        "Automated lead qualification",
+        "Intelligent customer segmentation",
+        "Sales process automation",
+        "Performance analytics",
+        "Integration with sales tools"
       ]
     }
   ];
@@ -81,12 +85,10 @@ const UseCases = () => {
             {cases.map((useCase, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl">
                 <div className="p-8">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="md:col-span-1">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
                       <h3 className="text-2xl font-bold mb-6 text-[#4800FF]">{useCase.title}</h3>
                       <p className="text-lg text-gray-600 mb-4">{useCase.metrics}</p>
-                    </div>
-                    <div className="md:col-span-2">
                       <div className="space-y-6">
                         <div className="bg-red-50 p-4 rounded-lg">
                           <span className="inline-block px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium mb-2">Problem</span>
@@ -101,6 +103,13 @@ const UseCases = () => {
                           <p className="text-gray-800">{useCase.benefit}</p>
                         </div>
                       </div>
+                    </div>
+                    <div className="flex items-center justify-center">
+                      <img 
+                        src={useCase.image} 
+                        alt={useCase.title}
+                        className="max-w-full h-auto rounded-lg shadow-md"
+                      />
                     </div>
                   </div>
                   
