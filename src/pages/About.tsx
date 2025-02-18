@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 
 const About = () => {
@@ -6,22 +5,22 @@ const About = () => {
     {
       name: "Daniel Bilbao",
       role: "CEO & Co-founder",
-      image: "https://example.com/founder1.jpg"
+      image: "/lovable-uploads/c1a740ff-c07f-4458-92f9-783ccee58a4b.png"
     },
     {
       name: "Maite Muniz",
       role: "COO & Co-founder",
-      image: "https://example.com/founder2.jpg"
+      image: "/lovable-uploads/544888d3-befa-4699-b5db-469daf556a5f.png"
     },
     {
       name: "David Cuadrado",
       role: "CTO & Co-founder",
-      image: "https://example.com/founder3.jpg"
+      image: "/lovable-uploads/41a3a1a4-769c-4c47-9783-473d0277c126.png"
     },
     {
       name: "Cesar Pino",
       role: "Co-founder",
-      image: "https://example.com/founder4.jpg"
+      image: "/lovable-uploads/5a688452-153c-4cc0-a973-9c5b8e21a131.png"
     }
   ];
 
@@ -94,10 +93,16 @@ const About = () => {
 
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-12">Leadership Team</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mx-auto">
               {founders.map((founder, index) => (
                 <div key={index} className="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <div className="w-32 h-32 rounded-full bg-gray-200 mx-auto mb-4"></div>
+                  <div className="relative mb-4">
+                    <img 
+                      src={founder.image} 
+                      alt={founder.name}
+                      className="w-32 h-32 rounded-full mx-auto object-cover"
+                    />
+                  </div>
                   <h3 className="text-xl font-semibold mb-2">{founder.name}</h3>
                   <p className="text-gray-600">{founder.role}</p>
                 </div>
