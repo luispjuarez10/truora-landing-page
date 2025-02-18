@@ -12,6 +12,16 @@ const About = () => {
       name: "Maite Muniz",
       role: "COO & Co-founder",
       image: "https://example.com/founder2.jpg"
+    },
+    {
+      name: "David Cuadrado",
+      role: "CTO & Co-founder",
+      image: "https://example.com/founder3.jpg"
+    },
+    {
+      name: "Cesar Pino",
+      role: "Co-founder",
+      image: "https://example.com/founder4.jpg"
     }
   ];
 
