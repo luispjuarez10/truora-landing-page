@@ -123,6 +123,13 @@ const Products = () => {
             {/* Electronic Signature */}
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
               <div className="p-8 lg:p-12">
+                <div className="relative">
+                  <img
+                    src="/lovable-uploads/a8c72575-8144-4732-aead-c8c54652816d.png"
+                    alt="ZapSign by Truora"
+                    className="absolute top-0 right-0 h-8"
+                  />
+                </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                   <div>
                     <div className="flex items-center mb-6">
@@ -133,14 +140,7 @@ const Products = () => {
                           className="h-10 w-10"
                         />
                       </div>
-                      <div>
-                        <h2 className="text-3xl font-bold text-gray-900 mb-2">Electronic Signature</h2>
-                        <img
-                          src="/lovable-uploads/a8c72575-8144-4732-aead-c8c54652816d.png"
-                          alt="ZapSign by Truora"
-                          className="h-8"
-                        />
-                      </div>
+                      <h2 className="text-3xl font-bold text-gray-900">Electronic Signature</h2>
                     </div>
                     
                     <div className="mb-8">
