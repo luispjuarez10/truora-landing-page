@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import { Shield, MessageSquare, FileCheck, Users, Globe, BarChart, Lock, Settings } from "lucide-react";
 
@@ -33,6 +32,15 @@ const Products = () => {
                       </div>
                       <h2 className="text-3xl font-bold text-gray-900">WhatsApp Customer Engagement</h2>
                     </div>
+                    
+                    <div className="mb-8">
+                      <img 
+                        src="/lovable-uploads/afa58d16-9cdc-40d0-a988-7ab6dd8ec664.png"
+                        alt="WhatsApp Customer Engagement"
+                        className="rounded-xl shadow-lg w-full"
+                      />
+                    </div>
+
                     <p className="text-lg text-gray-600 mb-8">
                       Transform your customer communication with our WhatsApp Business Platform integration. 
                       Build stronger relationships through real-time messaging and automated responses.
@@ -125,8 +133,24 @@ const Products = () => {
                           className="h-10 w-10"
                         />
                       </div>
-                      <h2 className="text-3xl font-bold text-gray-900">Electronic Signature</h2>
+                      <div>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-2">Electronic Signature</h2>
+                        <img
+                          src="/lovable-uploads/a8c72575-8144-4732-aead-c8c54652816d.png"
+                          alt="ZapSign by Truora"
+                          className="h-8"
+                        />
+                      </div>
                     </div>
+                    
+                    <div className="mb-8">
+                      <img 
+                        src="/lovable-uploads/e07c1fe6-9b71-405b-b7c1-8c5b2274939f.png"
+                        alt="Electronic Signature Interface"
+                        className="rounded-xl shadow-lg w-full"
+                      />
+                    </div>
+
                     <p className="text-lg text-gray-600 mb-8">
                       Streamline your document workflows with our secure and legally compliant electronic signature platform. 
                       Sign, send, and manage documents with ease.

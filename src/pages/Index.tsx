@@ -160,10 +160,11 @@ const Index = () => {
               <h2 className="text-3xl font-bold tracking-tight text-[#1A1F2C] mb-12">
                 Who Trusts Us
               </h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-16 items-center justify-items-center">
-                <img src="/lovable-uploads/2fa6d839-c76e-4515-b4b7-636ef1fb9a6d.png" alt="L'Oréal" className="h-24 w-auto" />
-                <img src="/lovable-uploads/bbfa1061-26c7-4cc7-8904-ff02e4c88efd.png" alt="Greenpeace" className="h-24 w-auto" />
-                <img src="/lovable-uploads/0fcd537d-0d44-4360-90a1-13f22113c703.png" alt="Ontop" className="h-24 w-auto" />
+              <div className="grid grid-cols-4 gap-8 items-center justify-items-center">
+                <img src="/lovable-uploads/2fa6d839-c76e-4515-b4b7-636ef1fb9a6d.png" alt="L'Oréal" className="h-16 w-auto" />
+                <img src="/lovable-uploads/bbfa1061-26c7-4cc7-8904-ff02e4c88efd.png" alt="Greenpeace" className="h-16 w-auto" />
+                <img src="/lovable-uploads/0fcd537d-0d44-4360-90a1-13f22113c703.png" alt="Pepsico" className="h-16 w-auto" />
+                <img src="/lovable-uploads/4e48cd5e-ff10-4690-8e59-c5e3b50fb124.png" alt="Ontop" className="h-16 w-auto" />
               </div>
             </div>
           </div>
